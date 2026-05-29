@@ -413,6 +413,9 @@
   .bg-\[\#F85710\] {
     background-color: #F85710;
   }
+  .bg-\[\#F95613\] {
+    background-color: #F95613;
+  }
   .bg-\[\#F95614\] {
     background-color: #F95614;
   }
@@ -501,6 +504,9 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
   }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
@@ -786,6 +792,11 @@
       width: 25%;
     }
   }
+  .lg\:w-\[33\%\] {
+    @media (width >= 64rem) {
+      width: 33%;
+    }
+  }
   .lg\:w-\[35\%\] {
     @media (width >= 64rem) {
       width: 35%;
@@ -824,6 +835,11 @@
   .lg\:w-\[62\%\] {
     @media (width >= 64rem) {
       width: 62%;
+    }
+  }
+  .lg\:w-\[75\%\] {
+    @media (width >= 64rem) {
+      width: 75%;
     }
   }
   .lg\:max-w-310 {
@@ -876,6 +892,11 @@
       gap: calc(var(--spacing) * 15);
     }
   }
+  .lg\:gap-20 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 20);
+    }
+  }
   .lg\:gap-25 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 25);
@@ -904,6 +925,11 @@
   .lg\:px-0 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:px-20 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 20);
     }
   }
   .lg\:py-10 {
