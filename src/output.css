@@ -186,8 +186,20 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .m-auto {
     margin: auto;
@@ -270,6 +282,9 @@
   .self-center {
     align-self: center;
   }
+  .self-stretch {
+    align-self: stretch;
+  }
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
@@ -316,6 +331,9 @@
   .bg-\[\#FEDBD4\] {
     background-color: #FEDBD4;
   }
+  .bg-\[\#FEDCD2\] {
+    background-color: #FEDCD2;
+  }
   .bg-\[\#FFDBD4\] {
     background-color: #FFDBD4;
   }
@@ -349,8 +367,14 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
   }
   .text-center {
     text-align: center;
@@ -483,6 +507,11 @@
       margin-bottom: calc(var(--spacing) * -40);
     }
   }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -563,6 +592,11 @@
       gap: calc(var(--spacing) * 35);
     }
   }
+  .lg\:self-center {
+    @media (width >= 64rem) {
+      align-self: center;
+    }
+  }
   .lg\:self-start {
     @media (width >= 64rem) {
       align-self: flex-start;
@@ -571,6 +605,11 @@
   .lg\:px-0 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:py-10 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 10);
     }
   }
   .lg\:py-25 {
@@ -586,6 +625,11 @@
   .lg\:pt-25 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 25);
+    }
+  }
+  .lg\:pr-50 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 50);
     }
   }
   .lg\:pb-10 {
